@@ -2,14 +2,18 @@
 #define DECK_H
 
 #include <stdlib.h>
-
 /**
- * enum kind_e - Enumeration of card suits.
- * @SPADE: Spades suit.
- * @HEART: Hearts suit.
- * @CLUB: Clubs suit.
- * @DIAMOND: Diamonds suit.
+ * enum kind_e - to enumerate Card suits
+ *
+ * @SPADE: to spades Suit
+ *
+ * @HEART: the hearts Suit
+ *
+ * @CLUB: the club Suits
+ *
+ * @DIAMOND: the diamond Suits
  */
+
 typedef enum kind_e
 {
 	SPADE = 0,
@@ -18,26 +22,32 @@ typedef enum kind_e
 	DIAMOND
 } kind_t;
 
+
 /**
- * struct card_s - Playing card
+ * struct card_s - to play Cards
+ * @value: the value of Cards.
  *
- * @value: Value of the card
- * From "Ace" to "King"
- * @kind: Kind of the card
+ * from "Ace" To "King".
+ *
+ * @kind: a kind Of Cards
  */
+
 typedef struct card_s
 {
 	const char *value;
 	const kind_t kind;
 } card_t;
 
+
 /**
- * struct deck_node_s - Deck of card
+ * struct deck_node_s - deck Of Card
+ * @card: a pointer To Card Of a Node.
  *
- * @card: Pointer to the card of the node
- * @prev: Pointer to the previous node of the list
- * @next: Pointer to the next node of the list
+ * @prev: a Pointer To Previous Node Of a List.
+ *
+ * @next: a Pointer To Next Node Of a List
  */
+
 typedef struct deck_node_s
 {
 	const card_t *card;
@@ -47,4 +57,4 @@ typedef struct deck_node_s
 
 void sort_deck(deck_node_t **deck);
 
-#endif /* DECK_H */
+#endif
