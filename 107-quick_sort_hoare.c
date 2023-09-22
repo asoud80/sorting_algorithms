@@ -2,10 +2,8 @@
 
 /**
 *swap - Positions Of 2 Elements Into the Array.
-
 *@array: an array
 *@item1: the Array Element.
-
 *@item2: the Array Element
 */
 
@@ -20,15 +18,15 @@ void swap(int *array, ssize_t item1, ssize_t item2)
 
 /**
  *hoare_partition - to Hoare the Partition Sorting Scheme to be Implemented.
-
+ *
  *@array: an array.
-
+ *
  *@first: 1st Array Element.
-
+ *
  *@last: the Last Array Element.
-
+ *
  *@size: the Size Array.
-
+ *
  *Return: to Return a Position Of Last Element Sorted.
  */
 
@@ -55,13 +53,13 @@ int hoare_partition(int *array, int first, int last, int size)
 
 /**
  *qs - this a Qucksort Algorithm to be Implementated.
-
+ *
  *@array: an array.
-
+ *
  *@first: 1st Array Element.
-
+ *
  *@last: the Last Array Element.
-
+ *
  *@size: the Array Size
  */
 
@@ -79,9 +77,9 @@ void qs(int *array, ssize_t first, ssize_t last, int size)
 
 /**
  *quick_sort_hoare - to Prepare a Terrain To Quicksort Algorithm.
-
+ *
  *@array: an array
-
+ *
  *@size: the Array Size
  */
 
